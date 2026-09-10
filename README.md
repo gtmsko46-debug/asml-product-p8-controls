@@ -1,16 +1,10 @@
 # asml-product-p8-controls
 
-**Source-interface control recovery when a shared FEL hiccups — N tools see the glitch; champion gets a recovery loop job.**
+Shared-source glitch recovery — N tools see the hiccup.
 
-| | |
-|--|--|
-| Spec | [`SPEC.md`](SPEC.md) · asml-bench [#50](https://github.com/gtmsko46-debug/asml-bench/issues/50) |
-| Factory | [FACTORY.md](https://github.com/gtmsko46-debug/asml-bench/blob/main/products/FACTORY.md) |
-| Stage | **Spec (M0)** — package/build waits bay |
-
-```bash
-# after M1
-pip install -e '.[dev]'
+```python
+from asml_product_p8_controls import recover_from_glitch
+print(recover_from_glitch({"n_tools": 4, "glitch_severity": 0.3}))
 ```
 
-Sandbox hill-climbs live on asml-bench (`labs/p8-controls/controller.py`); set `ASML_BENCH_ROOT` to pick up live weights once the loader exists.
+M1 SEED. Parent #50. Card `source-glitch-controls-v1` (product-local id until bench card lands).
