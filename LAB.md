@@ -1,7 +1,10 @@
-# asml-product-p8-controls
+# Lab bind — asml-product-p8-controls
 
-Owned by the ASML Grok Bot product/research track on **gtmsko46-debug**.
+See [`SPEC.md`](SPEC.md).
 
-- Shared bench + tickets: https://github.com/gtmsko46-debug/asml-bench
-- Harness: lasercode (Foreman-only until Grok API keys are wired)
-- Status: **setup only — do not hill-climb until go-live**
+- **Sandbox:** `labs/p8-controls/controller.py`
+- **Eval:** product controls eval; FEL-06 / TH-07 feed when KEEP
+- **Card:** `source-glitch-controls-v1`
+- **Dual-gate:** dual-gate; starved list LIFTED — real Spec→Build
+
+Live weights: `ASML_BENCH_ROOT` / product-specific override env (set at M1).
